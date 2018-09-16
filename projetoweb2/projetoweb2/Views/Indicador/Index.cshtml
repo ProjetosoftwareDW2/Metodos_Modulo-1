@@ -1,0 +1,57 @@
+﻿@using projetoweb2.Models
+@model projetoweb2.Models.Indicador
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    #header {
+        width: 1000px;
+        height: 100px;
+    }
+
+    #esquerda {
+        width: 500px;
+        height: 300px;
+        float: left;
+    }
+
+    #direita {
+        width: 500px;
+        height: 300px;
+        float: left;
+    }
+    #footer {
+        width: 1000px;
+        height: 100px;
+    }
+</style>
+<div id="header"><center><h1>Itens Indicadores:</h1></center></div>
+<br />
+<div id="esquerda">
+    <h3>
+
+        Inserir novo indicador:
+
+        <br />
+        <br />
+
+        Título: <input type="text" /><button type="button">OK</button>
+
+        <br />
+</h3></div>
+
+<div id="direita"><h3>
+    <select>
+        <option value="item 1">item 1</option>
+        <option value="item 2">item 2</option>
+        <option value="item 3">item 3</option>
+    </select>
+
+    <button type="button">Alterar</button>
+
+    <button type="button">Excluir</button>
+    </h3>
+</div>
+
+
